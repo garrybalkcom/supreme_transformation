@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat&display=swap');
 body{
     display:flex;
     align-content: center;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .container{
     display:flex;
@@ -17,20 +18,36 @@ img{
     height:501px;
 }
 .contact-links{
-    width:100%;   
+      
     display:inline;
 }
 ul{
     display:flex;
-    align-content: center;
-    justify-content: center;
+    
+    justify-content: space-around;
+   
+
+    
+}
+.title ul li{
+    font-size: 75%;
+    font-weight: 600;
+    margin-right:55px;
+}
+
+ ul li{
+    margin-right:55px;
+}
+.title{
+    width:375px;
+    margin:auto;
 }
 ul li{
     list-style:none;
-    margin-right:15%;
+    
 }
 .contact-form{
-    width:100%;
+    width:375px;
     display:flex;
     align-content: center;
     justify-content: center;
@@ -55,16 +72,22 @@ color:white;
     color:black;
 }
 p{
-    font-size:10px;
+    font-size:70%;
+}
+footer p{
+    font-size:8px;
     font-style: italic;
+    text-align:center;
 }
 footer{
-    font-size: 10px;
-    margin-bottom:0;
     padding:10px;
     width:100%;
     background:gray;
     height:20px;
+    
+}
+.action{
+    float:left;
 }
 @media only screen and (min-width:600px){
     .container{
@@ -87,7 +110,9 @@ footer{
         .contact-form .fields #file{
             color:white;
            }
-    
+           .fas:hover{
+            color:white;
+        }
 }
 /*
 image width 375 * 812
